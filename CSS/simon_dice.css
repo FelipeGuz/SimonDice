@@ -1,0 +1,59 @@
+#boton1{
+    width: 70%;
+    height: 250%;
+    background-color: rgba(255, 8, 0, 0.644);
+    border: 5% solid #000;
+    font: bold 50% Verdana;
+    cursor: pointer;
+    padding: 20px;
+    background-color:red;
+    color: #ddd;
+    width: 300px;
+    font-size: 1.2em;
+    box-shadow: 0 0 40px red;
+    border-radius: 16px;
+}
+
+#boton2{
+    width: 70%;
+    height: 250%;
+    background-color: blue;
+    border: 5% solid #000;
+    font: bold 50% Verdana;
+    cursor: pointer;
+    color: #ddd;
+    width: 300px;
+    font-size: 1.2em;
+    box-shadow: 0 0 40px blue;
+    border-radius: 16px;
+}
+
+#boton3{
+    width: 70%;
+    height: 250%;
+    background-color: green;
+    border: 5% solid #000;
+    font: bold 50% Verdana;
+    cursor: pointer;
+    color: #ddd;
+    width: 300px;
+    font-size: 1.2em;
+    box-shadow: 0 0 40px green;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+#boton4{
+    width: 70%;
+    height: 250%;
+    background-color: yellow;
+    border: 5% solid #000;
+    font: bold 50% Verdana;
+    cursor: pointer;
+    color: #ddd;
+    width: 300px;
+    font-size: 1.2em;
+    box-shadow: 0 0 40px yellow;
+    border-radius: 16px;
+    padding: 20px;
+}
