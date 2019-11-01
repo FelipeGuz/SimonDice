@@ -1,24 +1,39 @@
 
-var patron = [Math.floor((Math.random()*4)+1)];
-
-var temp = document.getElementById("boton"+patron[0]).style.boxShadow;
-console.log(temp)
-// document.getElementById("boton"+patron[0]).style.boxShadow = "none";
-document.getElementById("boton"+patron[0]).style.boxShadow = temp;
-
 var intento = 0;
 var turno = 0;
+var color = ["red","blue","green","yellow"];
+
+var patron = [Math.floor((Math.random()*4))];
+
+console.log("Comienzo")
+
+var id = setInterval(()=>{
+    console.log("Cambiando a negro")
+    document.getElementById("boton"+patron[0]).style.backgroundColor = "black";
+}, 5000);
+console.log("Retomando")
+document.getElementById("boton"+patron[0]).style.backgroundColor = color[patron[0]];
+
+// document.getElementById("boton"+patron[0]).style.backgroundColor = "black";
+// setTimeout(()=>{document.getElementById("boton"+patron[0]).style.backgroundColor = color[patron[0]];},200)
+
 
 function juego(boton){
     if(partida(patron,boton,intento)==true){
         if(intento==turno){
-            var n = Math.floor((Math.random()*4)+1);
+            var n = Math.floor((Math.random()*4));
             patron.push(n);
 
+            console.log(patron)
+
             for(var i=0; i<patron.length; i++){
-                var temp = document.getElementById("boton"+patron[i]);
-                document.getElementById("boton"+patron[i]).style.boxShadow = "none";
-                document.getElementById("boton"+patron[i]).style.boxShadow = temp;
+                console.log(patron[i])
+                var id = setInterval(()=>{
+                    console.log("Cambiando a negro")
+                    document.getElementById("boton"+patron[i]).style.backgroundColor = "black";
+                }, 5000);
+                console.log("Retomando")
+                document.getElementById("boton"+patron[i]).style.backgroundColor = color[patron[i]];
             }
             
             console.log("Correcto: "+n)
@@ -30,7 +45,6 @@ function juego(boton){
         }
     }else{
         console.log("Incorrecto");
-        break;
     }
 }
 
@@ -65,4 +79,5 @@ function partida(patron,boton,intento){
         return false;
     }
 }
+
 
